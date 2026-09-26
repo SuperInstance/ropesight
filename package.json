@@ -1,0 +1,9 @@
+{
+  "name": "ropesight",
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "smoke": "node smoke.mjs"
+  },
+  "license": "MIT"
+}
