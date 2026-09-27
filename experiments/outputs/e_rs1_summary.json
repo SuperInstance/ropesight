@@ -1,0 +1,806 @@
+{
+  "experiment": "e_rs1_rope",
+  "task": "26-c ropesight: permutation rota lane (retry)",
+  "verdicts": {
+    "R1_finding": "PASS",
+    "R2_finding": "PASS",
+    "R3_finding": "MIXED (see payload — honest negatives are findings)",
+    "R5_finding": "PASS"
+  },
+  "R1": {
+    "methods": [
+      {
+        "name": "Extent on Three",
+        "stage": 3,
+        "period": 6,
+        "expectPeriod": 6,
+        "distinctRows": true,
+        "maxMove": 1,
+        "closed": true,
+        "halfLead": "321",
+        "leadEnd1": "123",
+        "expectLeadEnd1": "123",
+        "trebleFirstLead": "123321",
+        "coverVal": 2,
+        "expectCover": 2,
+        "coverUniform": true
+      },
+      {
+        "name": "Plain Bob Doubles",
+        "stage": 5,
+        "period": 40,
+        "expectPeriod": 40,
+        "distinctRows": true,
+        "maxMove": 1,
+        "closed": true,
+        "halfLead": "54321",
+        "leadEnd1": "13524",
+        "expectLeadEnd1": "13524",
+        "trebleFirstLead": "1234554321",
+        "coverVal": 8,
+        "expectCover": 8,
+        "coverUniform": true
+      },
+      {
+        "name": "Plain Bob Minor",
+        "stage": 6,
+        "period": 60,
+        "expectPeriod": 60,
+        "distinctRows": true,
+        "maxMove": 1,
+        "closed": true,
+        "halfLead": "654321",
+        "leadEnd1": "135264",
+        "expectLeadEnd1": "135264",
+        "trebleFirstLead": "123456654321",
+        "coverVal": 10,
+        "expectCover": 10,
+        "coverUniform": true
+      },
+      {
+        "name": "Plain Bob Triples",
+        "stage": 7,
+        "period": 84,
+        "expectPeriod": 84,
+        "distinctRows": true,
+        "maxMove": 1,
+        "closed": true,
+        "halfLead": "7654321",
+        "leadEnd1": "1352746",
+        "expectLeadEnd1": "1352746",
+        "trebleFirstLead": "12345677654321",
+        "coverVal": 12,
+        "expectCover": 12,
+        "coverUniform": true
+      },
+      {
+        "name": "Plain Bob Major",
+        "stage": 8,
+        "period": 112,
+        "expectPeriod": 112,
+        "distinctRows": true,
+        "maxMove": 1,
+        "closed": true,
+        "halfLead": "87654321",
+        "leadEnd1": "13527486",
+        "expectLeadEnd1": "13527486",
+        "trebleFirstLead": "1234567887654321",
+        "coverVal": 14,
+        "expectCover": 14,
+        "coverUniform": true
+      }
+    ],
+    "algebra": {
+      "trials": 2000,
+      "assoc": 2000,
+      "inverseRoundTrip": 2000,
+      "identityNeut": 2000,
+      "orderCross6": 2
+    },
+    "localGlobal": [
+      {
+        "label": "Extent on Three plain",
+        "rule": "method-pos",
+        "strokes": 6,
+        "traceHash": "0x7a2f3e5ba0d9dcd3",
+        "methodTraceHash": "0x7a2f3e5ba0d9dcd3",
+        "byteIdentical": true,
+        "blindByConstruction": true,
+        "closedToRounds": true,
+        "touchDerivedPeriod": null,
+        "touchBlindedPeriod": null
+      },
+      {
+        "label": "Plain Bob Doubles plain",
+        "rule": "method-pos",
+        "strokes": 40,
+        "traceHash": "0xf797ccb53f264d0b",
+        "methodTraceHash": "0xf797ccb53f264d0b",
+        "byteIdentical": true,
+        "blindByConstruction": true,
+        "closedToRounds": true,
+        "touchDerivedPeriod": null,
+        "touchBlindedPeriod": null
+      },
+      {
+        "label": "Plain Bob Minor plain",
+        "rule": "method-pos",
+        "strokes": 60,
+        "traceHash": "0xdbb4cec874305643",
+        "methodTraceHash": "0xdbb4cec874305643",
+        "byteIdentical": true,
+        "blindByConstruction": true,
+        "closedToRounds": true,
+        "touchDerivedPeriod": null,
+        "touchBlindedPeriod": null
+      },
+      {
+        "label": "Plain Bob Triples plain",
+        "rule": "method-pos",
+        "strokes": 84,
+        "traceHash": "0x2eef6f5671edc3db",
+        "methodTraceHash": "0x2eef6f5671edc3db",
+        "byteIdentical": true,
+        "blindByConstruction": true,
+        "closedToRounds": true,
+        "touchDerivedPeriod": null,
+        "touchBlindedPeriod": null
+      },
+      {
+        "label": "Plain Bob Major plain",
+        "rule": "method-pos",
+        "strokes": 112,
+        "traceHash": "0xea34c025e3456a3b",
+        "methodTraceHash": "0xea34c025e3456a3b",
+        "byteIdentical": true,
+        "blindByConstruction": true,
+        "closedToRounds": true,
+        "touchDerivedPeriod": null,
+        "touchBlindedPeriod": null
+      },
+      {
+        "label": "Plain Bob Minor touch(le=0)",
+        "rule": "method-pos",
+        "strokes": 180,
+        "traceHash": "0xfe70765401fadfe3",
+        "methodTraceHash": "0xfe70765401fadfe3",
+        "byteIdentical": true,
+        "blindByConstruction": true,
+        "closedToRounds": true,
+        "touchDerivedPeriod": 180,
+        "touchBlindedPeriod": 180
+      },
+      {
+        "label": "Plain Bob Minor touch(le=0+1)",
+        "rule": "method-pos",
+        "strokes": 120,
+        "traceHash": "0x0b4030fb046615db",
+        "methodTraceHash": "0x0b4030fb046615db",
+        "byteIdentical": true,
+        "blindByConstruction": true,
+        "closedToRounds": true,
+        "touchDerivedPeriod": 120,
+        "touchBlindedPeriod": 120
+      },
+      {
+        "label": "Plain Bob Minor touch(le=0+1+2+3+4)",
+        "rule": "method-pos",
+        "strokes": 36,
+        "traceHash": "0x24a5e27b24687b1b",
+        "methodTraceHash": "0x24a5e27b24687b1b",
+        "byteIdentical": true,
+        "blindByConstruction": true,
+        "closedToRounds": true,
+        "touchDerivedPeriod": 36,
+        "touchBlindedPeriod": 36
+      },
+      {
+        "label": "Plain Bob Doubles touch(le=0)",
+        "rule": "method-pos",
+        "strokes": 120,
+        "traceHash": "0x92eed8004150530b",
+        "methodTraceHash": "0x92eed8004150530b",
+        "byteIdentical": true,
+        "blindByConstruction": true,
+        "closedToRounds": true,
+        "touchDerivedPeriod": 120,
+        "touchBlindedPeriod": 120
+      },
+      {
+        "label": "Extent on Three plain",
+        "rule": "line",
+        "strokes": 6,
+        "traceHash": "0x7a2f3e5ba0d9dcd3",
+        "methodTraceHash": "0x7a2f3e5ba0d9dcd3",
+        "byteIdentical": true,
+        "blindByConstruction": true,
+        "closedToRounds": true,
+        "touchDerivedPeriod": null,
+        "touchBlindedPeriod": null
+      },
+      {
+        "label": "Plain Bob Doubles plain",
+        "rule": "line",
+        "strokes": 40,
+        "traceHash": "0xf797ccb53f264d0b",
+        "methodTraceHash": "0xf797ccb53f264d0b",
+        "byteIdentical": true,
+        "blindByConstruction": true,
+        "closedToRounds": true,
+        "touchDerivedPeriod": null,
+        "touchBlindedPeriod": null
+      },
+      {
+        "label": "Plain Bob Minor plain",
+        "rule": "line",
+        "strokes": 60,
+        "traceHash": "0xdbb4cec874305643",
+        "methodTraceHash": "0xdbb4cec874305643",
+        "byteIdentical": true,
+        "blindByConstruction": true,
+        "closedToRounds": true,
+        "touchDerivedPeriod": null,
+        "touchBlindedPeriod": null
+      },
+      {
+        "label": "Plain Bob Triples plain",
+        "rule": "line",
+        "strokes": 84,
+        "traceHash": "0x2eef6f5671edc3db",
+        "methodTraceHash": "0x2eef6f5671edc3db",
+        "byteIdentical": true,
+        "blindByConstruction": true,
+        "closedToRounds": true,
+        "touchDerivedPeriod": null,
+        "touchBlindedPeriod": null
+      },
+      {
+        "label": "Plain Bob Major plain",
+        "rule": "line",
+        "strokes": 112,
+        "traceHash": "0xea34c025e3456a3b",
+        "methodTraceHash": "0xea34c025e3456a3b",
+        "byteIdentical": true,
+        "blindByConstruction": true,
+        "closedToRounds": true,
+        "touchDerivedPeriod": null,
+        "touchBlindedPeriod": null
+      },
+      {
+        "label": "Plain Bob Minor touch(le=0)",
+        "rule": "line",
+        "strokes": 180,
+        "traceHash": "0xfe70765401fadfe3",
+        "methodTraceHash": "0xfe70765401fadfe3",
+        "byteIdentical": true,
+        "blindByConstruction": true,
+        "closedToRounds": true,
+        "touchDerivedPeriod": 180,
+        "touchBlindedPeriod": 180
+      },
+      {
+        "label": "Plain Bob Minor touch(le=0+1)",
+        "rule": "line",
+        "strokes": 120,
+        "traceHash": "0x0b4030fb046615db",
+        "methodTraceHash": "0x0b4030fb046615db",
+        "byteIdentical": true,
+        "blindByConstruction": true,
+        "closedToRounds": true,
+        "touchDerivedPeriod": 120,
+        "touchBlindedPeriod": 120
+      },
+      {
+        "label": "Plain Bob Minor touch(le=0+1+2+3+4)",
+        "rule": "line",
+        "strokes": 36,
+        "traceHash": "0x24a5e27b24687b1b",
+        "methodTraceHash": "0x24a5e27b24687b1b",
+        "byteIdentical": true,
+        "blindByConstruction": true,
+        "closedToRounds": true,
+        "touchDerivedPeriod": 36,
+        "touchBlindedPeriod": 36
+      },
+      {
+        "label": "Plain Bob Doubles touch(le=0)",
+        "rule": "line",
+        "strokes": 120,
+        "traceHash": "0x92eed8004150530b",
+        "methodTraceHash": "0x92eed8004150530b",
+        "byteIdentical": true,
+        "blindByConstruction": true,
+        "closedToRounds": true,
+        "touchDerivedPeriod": 120,
+        "touchBlindedPeriod": 120
+      }
+    ],
+    "maxLocalMove": 1,
+    "auditBlind": {
+      "sameTraceHash": true,
+      "note": "global audit data does not affect the ringing"
+    }
+  },
+  "R2": {
+    "courses": [
+      {
+        "name": "Extent on Three",
+        "stage": 3,
+        "period": 6,
+        "promisedPerBell": 2,
+        "coverVal": 2,
+        "coverUniform": true,
+        "coverMatrix": [
+          "2,2,2",
+          "2,2,2",
+          "2,2,2"
+        ]
+      },
+      {
+        "name": "Plain Bob Doubles",
+        "stage": 5,
+        "period": 40,
+        "promisedPerBell": 8,
+        "coverVal": 8,
+        "coverUniform": true,
+        "coverMatrix": [
+          "8,8,8,8,8",
+          "8,8,8,8,8",
+          "8,8,8,8,8",
+          "8,8,8,8,8",
+          "8,8,8,8,8"
+        ]
+      },
+      {
+        "name": "Plain Bob Minor",
+        "stage": 6,
+        "period": 60,
+        "promisedPerBell": 10,
+        "coverVal": 10,
+        "coverUniform": true,
+        "coverMatrix": [
+          "10,10,10,10,10,10",
+          "10,10,10,10,10,10",
+          "10,10,10,10,10,10",
+          "10,10,10,10,10,10",
+          "10,10,10,10,10,10",
+          "10,10,10,10,10,10"
+        ]
+      },
+      {
+        "name": "Plain Bob Triples",
+        "stage": 7,
+        "period": 84,
+        "promisedPerBell": 12,
+        "coverVal": 12,
+        "coverUniform": true,
+        "coverMatrix": [
+          "12,12,12,12,12,12,12",
+          "12,12,12,12,12,12,12",
+          "12,12,12,12,12,12,12",
+          "12,12,12,12,12,12,12",
+          "12,12,12,12,12,12,12",
+          "12,12,12,12,12,12,12",
+          "12,12,12,12,12,12,12"
+        ]
+      },
+      {
+        "name": "Plain Bob Major",
+        "stage": 8,
+        "period": 112,
+        "promisedPerBell": 14,
+        "coverVal": 14,
+        "coverUniform": true,
+        "coverMatrix": [
+          "14,14,14,14,14,14,14,14",
+          "14,14,14,14,14,14,14,14",
+          "14,14,14,14,14,14,14,14",
+          "14,14,14,14,14,14,14,14",
+          "14,14,14,14,14,14,14,14",
+          "14,14,14,14,14,14,14,14",
+          "14,14,14,14,14,14,14,14",
+          "14,14,14,14,14,14,14,14"
+        ]
+      }
+    ],
+    "strokesAllPermutations": true,
+    "blindedMinorCover": {
+      "uniform": true,
+      "allPermutations": true,
+      "coverVal": 10
+    }
+  },
+  "R3": {
+    "honest": {
+      "strokes": 1516,
+      "clashBits": 0,
+      "ownRope": 0,
+      "falseAlarmRate": 0
+    },
+    "deviator": {
+      "Plain Bob Minor": {
+        "method-pos": {
+          "samples": 1380,
+          "vacuous": 420,
+          "clashAtStroke": 1380,
+          "partnerNotified": 1380,
+          "latency0": 1380,
+          "ownRopeFires": 480,
+          "ownRopeSilent": 900,
+          "moveHistogram": {
+            "0": 600,
+            "1": 300,
+            "2": 480
+          },
+          "healed": 0,
+          "postStumbleByteEqual": 0,
+          "persistFraction": 1,
+          "clashDensityAfter": 1,
+          "closedToRounds": 0,
+          "healStrokeAnomalies": 0
+        },
+        "line": {
+          "samples": 1380,
+          "vacuous": 420,
+          "clashAtStroke": 1380,
+          "partnerNotified": 1380,
+          "latency0": 1380,
+          "ownRopeFires": 480,
+          "ownRopeSilent": 900,
+          "moveHistogram": {
+            "0": 600,
+            "1": 300,
+            "2": 480
+          },
+          "healed": 1380,
+          "postStumbleByteEqual": 1380,
+          "persistFraction": 0,
+          "clashDensityAfter": 0,
+          "closedToRounds": 1380,
+          "healStrokeAnomalies": 680
+        }
+      },
+      "Plain Bob Doubles": {
+        "method-pos": {
+          "samples": 712,
+          "vacuous": 288,
+          "clashAtStroke": 712,
+          "partnerNotified": 712,
+          "latency0": 712,
+          "ownRopeFires": 240,
+          "ownRopeSilent": 472,
+          "moveHistogram": {
+            "0": 304,
+            "1": 168,
+            "2": 240
+          },
+          "healed": 0,
+          "postStumbleByteEqual": 0,
+          "persistFraction": 1,
+          "clashDensityAfter": 1,
+          "closedToRounds": 0,
+          "healStrokeAnomalies": 0
+        },
+        "line": {
+          "samples": 712,
+          "vacuous": 288,
+          "clashAtStroke": 712,
+          "partnerNotified": 712,
+          "latency0": 712,
+          "ownRopeFires": 240,
+          "ownRopeSilent": 472,
+          "moveHistogram": {
+            "0": 304,
+            "1": 168,
+            "2": 240
+          },
+          "healed": 712,
+          "postStumbleByteEqual": 712,
+          "persistFraction": 0,
+          "clashDensityAfter": 0,
+          "closedToRounds": 712,
+          "healStrokeAnomalies": 336
+        }
+      }
+    },
+    "lost": {
+      "Plain Bob Minor": {
+        "up": {
+          "samples": 300,
+          "clashStrokes": 22087,
+          "ownRopeEver": 0,
+          "closedToRounds": 60,
+          "densitySum": 246.43906209861424,
+          "minDensity": 0.7385,
+          "maxDensity": 0.9151,
+          "meanDensity": 0.8215
+        },
+        "down": {
+          "samples": 300,
+          "clashStrokes": 22107,
+          "ownRopeEver": 0,
+          "closedToRounds": 60,
+          "densitySum": 246.60712932550499,
+          "minDensity": 0.7385,
+          "maxDensity": 0.9151,
+          "meanDensity": 0.822
+        }
+      },
+      "Plain Bob Doubles": {
+        "up": {
+          "samples": 160,
+          "clashStrokes": 7498,
+          "ownRopeEver": 0,
+          "closedToRounds": 26,
+          "densitySum": 125.80355715537394,
+          "minDensity": 0.6957,
+          "maxDensity": 0.8824,
+          "meanDensity": 0.7863
+        },
+        "down": {
+          "samples": 160,
+          "clashStrokes": 7483,
+          "ownRopeEver": 0,
+          "closedToRounds": 26,
+          "densitySum": 125.61368373765242,
+          "minDensity": 0.6957,
+          "maxDensity": 0.8824,
+          "meanDensity": 0.7851
+        }
+      }
+    },
+    "conspiracy": {
+      "Plain Bob Minor": {
+        "method-pos": {
+          "samples": 900,
+          "clash": 0,
+          "uninvolvedSignal": 0,
+          "conspiratorOwnRope": 745,
+          "fullySilent": 155,
+          "validRowButWrong": 900,
+          "healedByteEqual": 0,
+          "stillClosed": 0,
+          "postTradeClashDensity": 0
+        },
+        "line": {
+          "samples": 900,
+          "clash": 0,
+          "uninvolvedSignal": 0,
+          "conspiratorOwnRope": 745,
+          "fullySilent": 155,
+          "validRowButWrong": 900,
+          "healedByteEqual": 900,
+          "stillClosed": 900,
+          "postTradeClashDensity": 0
+        }
+      },
+      "Plain Bob Doubles": {
+        "method-pos": {
+          "samples": 400,
+          "clash": 0,
+          "uninvolvedSignal": 0,
+          "conspiratorOwnRope": 320,
+          "fullySilent": 80,
+          "validRowButWrong": 400,
+          "healedByteEqual": 0,
+          "stillClosed": 0,
+          "postTradeClashDensity": 0
+        },
+        "line": {
+          "samples": 400,
+          "clash": 0,
+          "uninvolvedSignal": 0,
+          "conspiratorOwnRope": 320,
+          "fullySilent": 80,
+          "validRowButWrong": 400,
+          "healedByteEqual": 400,
+          "stillClosed": 400,
+          "postTradeClashDensity": 0
+        }
+      }
+    }
+  },
+  "R4": [
+    {
+      "allegory": "bells / ringers",
+      "seed": "L5 \"the ropes still hang where the first ringer hung them\"",
+      "module": "lanes (workers/agents) with fixed identity slots",
+      "receipt": "R1"
+    },
+    {
+      "allegory": "rounds",
+      "seed": "L45 \"You have rung every order... you have rung the extent.\"",
+      "module": "rota tick alignment: the identity row every course returns to",
+      "receipt": "R1 periods 6/40/60/84/112"
+    },
+    {
+      "allegory": "a method (Plain Bob...)",
+      "seed": "L53 \"The name is not the method. The method is what you do when you have forgotten the name.\"",
+      "module": "fixed permutation composition (public token stream); each lane holds its OWN copy + own position + own counter",
+      "receipt": "R1 local==global"
+    },
+    {
+      "allegory": "the one-place rule",
+      "seed": "L49 \"no bell may move more than one place at a time. The rule was not designed.\"",
+      "module": "every change = product of disjoint adjacent transpositions; maxMove==1 verified globally AND per-lane",
+      "receipt": "R1"
+    },
+    {
+      "allegory": "the height",
+      "seed": "L5 \"The height is the only thing that has not changed in four hundred years.\"",
+      "module": "CONSERVED COVER: every lane serves every position exactly period/n times per course (2/8/10/12/14) — the fixed-share trust schedule: trust mass is uniform and conserved, no lane accumulates position-privilege",
+      "receipt": "R2"
+    },
+    {
+      "allegory": "ropesight",
+      "seed": "L61 \"The band is one thing with eight hands.\"",
+      "module": "blinded lanes (own state + 1-bit channel only) produce byte-identical traces to global sight; the global audit sheet is not load-bearing",
+      "receipt": "R3a"
+    },
+    {
+      "allegory": "the conductor's calls",
+      "seed": "L57 \"A bob is a small change in the rule. The rule is still the rule.\"",
+      "module": "public call stream baked into every lane's own token copy before ringing; zero per-stroke instruction during ringing",
+      "receipt": "R3a touches"
+    },
+    {
+      "allegory": "a ringer feels the rope go wrong",
+      "seed": "L21 \"If the angle shifts by a degree, the stay cracks.\"",
+      "module": "own-rope anomaly: fires iff the lane's physical move exceeds one place (measured partition) — far moves crack; move-cancelling near moves are rope-silent",
+      "receipt": "R3c"
+    },
+    {
+      "allegory": "the deviator",
+      "seed": "L21 \"A falling bell is not a bell. It is a moving weight with an opinion.\"",
+      "module": "E24-toxic analog: the near deviation (plausible, small, wrong slot) is the voice to fear — and the slot partition still catches it through the displaced partner at latency 0",
+      "receipt": "R3c"
+    },
+    {
+      "allegory": "lost, not toxic",
+      "seed": "L81 \"every bell is a broken stay that has not happened yet. The practice is what keeps it from happening.\"",
+      "module": "a lane that loses its place needs its own practiced line to re-seat; without it the wrongness persists — recovery is personal practice, not global rescue",
+      "receipt": "R3c persistFraction"
+    },
+    {
+      "allegory": "provenance without identity",
+      "seed": "L5 \"Nobody remembers the first ringer's name.\"",
+      "module": "the receipt chain hashes strokes and rows; lanes are interchangeable positions, the record is not",
+      "receipt": "R4/chain"
+    },
+    {
+      "allegory": "The Tunnel",
+      "seed": "L123-125 \"The tunnel was being dug from both ends. Neither end knew about the other.\"",
+      "module": "coordinated pair-trade: locally invisible at the trade stroke on EVERY sample; under the line rule it heals and is undetectable forever — only a global audit sees it",
+      "receipt": "R3d"
+    },
+    {
+      "allegory": "trust the rule, not the members",
+      "seed": "L69 \"We do not know. We ring the method. The method guarantees the changes. We trust the rule.\"",
+      "module": "correctness from composed schedule structure, not member auditing — but the audit channel that DOES exist (slot clash) is exact at latency 0 with zero false alarms",
+      "receipt": "R3"
+    }
+  ],
+  "R5": {
+    "sameSeedByteIdentical": true,
+    "traceHashCount": 20,
+    "digest": "0xad69eb07ccc70605",
+    "prngSeedsDiffer": true
+  },
+  "sealedRows": [
+    {
+      "seq": 1,
+      "type": "charter",
+      "seed": "seed-story.md \"The Ropesight\" (+ \"# The Tunnel\")",
+      "claim": "Bells = fleet lanes. Rounds = rota ticks. A method = a fixed composition of stage-permutations. Ropesight (seed L45-L69): each ringer knows only their own next position (LOCAL rule), yet the band completes the method EXACTLY (GLOBAL correctness). L5: \"The height is the only thing that has not changed in four hundred years\" = the conserved cover (every bell rings every position the same count). L49: \"no bell may move more than one place at a time\" = every change is a product of disjoint adjacent transpositions. L57: conductor's calls = public broadcast, still local per lane. L21: \"If the angle shifts by a degree, the stay cracks\" = own-rope anomaly channel. The Tunnel (L123-137) = coordinated deviation: locally invisible.",
+      "machine": "bells/methods.mjs (permutation composition algebra over N bells: identity, compose, applyChange, applyTokenToPos, inverse, order, place-notation changes, Extent on Three + Plain Bob Doubles/Minor/Triples/Major, course facts, personal lines) + bells/rota.mjs (Lane = blinded local rule over own token copy + own position + own counter, two rule variants; Tower = physical claim-resolution layer with the 1-bit clash channel; deviations = near/stay/far/lost-hunt/conspiracy). Chain: experiments/receipts.mjs (fleet fnv1a64 idiom).",
+      "scope_note": "Seed L53 names \"Plain Bob. Grandsire. Stedman. Cambridge.\" This lane ships the Plain Bob family (Doubles/Minor/Triples/Major) derived from first principles and verified against the documented plain-course lengths 2n(n-1), plus the seed's own L45 method, the extent on three (period 6 = 3!). Grandsire/Stedman/Cambridge are NOT derived here — deriving a second family from memory would risk fabrication; honest scope."
+    },
+    {
+      "seq": 2,
+      "type": "audit_dead_draft",
+      "what": "Task 26-c is a retry. The first attempt died after chartering and left untracked partial drafts (bells/, experiments/). Audited line by line before any run.",
+      "kept": [
+        "bells/methods.mjs construction VERIFIED CORRECT and kept (with additions): periods, backrounds half-leads, cover uniformity, one-place rule all confirmed; Plain Bob Minor first lead end 135264 and half-lead 654321 hand-traced independently BEFORE the runs.",
+        "experiments/receipts.mjs chain core kept (fnv1a64 over [prev, rest], genesis GENESIS — diffed verbatim against quilt-silicon's, the fleet idiom).",
+        "rota.mjs CONCEPTS kept: deviation kinds, 1-bit clash channel, own-rope anomaly, conspiracy pair-trade, the local/global partition idea.",
+        "e_rs1 skeleton kept: R1-R5 shape, decision-rules-first ordering, allegory map (seed L-numbers re-checked against the seed file)."
+      ],
+      "replaced": [
+        "ROTA ROW-CONVENTION BUG (fatal): the draft's Tower recorded claims (bell->position) as the \"row\" and compared them to position->bell method rows. Only 14/60 Plain Bob Minor rows are involutions, so the honest blinded run could never have been byte-identical; the draft's own probe assertion (throw on divergence) proves the draft never completed a run. Tower now builds the rung row position->bell.",
+        "e_rs1 STARTUP CRASH: Object.fromEntries over non-pair objects (lines cruft) threw at load; console.logs referenced undefined dMinStat/cMinStat/cDblStat. Rewritten.",
+        "UNVERIFIED SEALED NUMBERS NOT CARRIED: the draft sealed touch periods 180/120/36/120 and \"Doubles first lead end 13425\" with no derivation. The lead-end claim is FALSE (actual: 13524, hand re-traced). Touch periods are now DERIVED and booked before the blinded runs; unverifiable magic numbers are not sealed.",
+        "SEALED PREDICTION CORRECTED: \"near deviations are rope-silent\" is false in general — a near deviation on a bell already moving compounds to a 2-place move (the stay cracks, L21). Replaced by the measured partition: own-rope fires iff |claim - own position| > 1, independent of kind label.",
+        "LANE MODEL REFINED: primary local rule is now method-pos (own token copy + own position + own counter — the brief's \"own next transposition\"); the draft's memorised personal line kept as the 'line' variant. Tower no longer writes global observations into lane objects."
+      ]
+    },
+    {
+      "seq": 3,
+      "type": "decision_rules",
+      "R1_period": "VERDICT PASS iff for each method the computed period (smallest k>=1 with row_k == rounds) equals the sealed expectation — Extent on Three: 6 (= 3!, seed L45 \"you have rung the extent\"); Plain Bob Doubles/Minor/Triples/Major: 40/60/84/112 (= 2n(n-1), the documented plain-course lengths); ALL course rows distinct; |bell move| <= 1 at EVERY change of EVERY stage both in the global walk and in the LOCAL rule applyTokenToPos (seed L49); half-lead row == backrounds (n..1); first lead end == {123, 13524, 135264, 1352746, 13527486} (Minor 135264 documented + hand-verified; others derived from the construction whose period/backround/treble/cover structure is independently attested); treble path over the first lead is the plain hunt 1..n,n..1. Algebra laws: compose identity/associativity/inverse hold on 2000 random legal changes per trial set; cross order = 2.",
+      "R1_local_global": "VERDICT PASS iff the rota run with blinded lanes — each lane holds ONLY bell id, its own frozen copy of the public token stream, own position, own stroke counter (rule method-pos), plus optionally its own memorised line (rule line) — is BYTE-IDENTICAL stroke by stroke to the global permutation application of the same token list, for all 5 plain courses AND all admitted touches, under BOTH rules; no Lane owns any row/tower/other-lane reference (structural blinding over own keys); and an AUDIT-BLIND run (tower sheet replaced by zeros, invisible to lanes) produces the SAME trace hash — the global audit is not load-bearing.",
+      "R2_cover": "VERDICT PASS iff over each full course (rows r_0..r_{period-1}) every bell occupies every position EXACTLY period/n times (2/8/10/12/14) — the uniform conserved cover, seed L5 \"the height\"; and every rung row is a permutation (each position exactly one bell). The blinded Minor run's own rows must reproduce the same cover.",
+      "R3a": "THE ROPESIGHT PROPERTY. VERDICT PASS iff every honest blinded run (5 plain courses x 2 rules + admitted touches x 2 rules) is byte-identical to global sight and closes to rounds.",
+      "R3b": "False alarms. VERDICT PASS iff over ALL strokes of ALL honest runs the total clash-bits across all lanes == 0 AND own-rope anomalies == 0 — an honest band never feels a rope go wrong. Receipt the rate as exactly 0.",
+      "R3c": "DEVIATOR (unilateral wrong transposition at a chosen stroke; sealed before the sweep, tested exhaustively over ALL (stroke, bell, kind) samples on Minor and Doubles, kinds near-up/near-down/stay/far-up/far-down, both rules; vacuous samples — wrong transposition equals the right one or falls off the tower — skipped and counted): (i) P(clash at the deviation stroke) = 1 with an honest partner notified at the SAME stroke (detection latency 0): at the deviation stroke the honest bells claim exactly the positions that are NOT the deviator's method position, so ANY non-vacuous wrong claim lands in an occupied slot — the partition argument; (ii) OWN-ROPE (the lane's own expected-next-position check, L21) fires IFF |claim - own position| > 1 MEASURED — far kinds always (unless vacuous); stay kinds never (move 0); near kinds exactly when they compound a move into >= 2 places (count receipted — the corrected taxonomy); (iii) rule line: the stumble self-heals — every row after the deviation stroke is byte-equal to the method and the (doubled) course closes to rounds — full recovery from the lane's own count; (iv) rule method-pos: the lane cannot know its true place was lost and keeps ringing the method from where it IS — persistence, clash density and closure over a doubled course are BOOKED AS FINDINGS (no pass/fail); (v) lost-hunt (persists, hunts +-1 legally): own-rope NEVER fires after the start stroke (legal moves, wrong places), the course never returns to rounds, clash density receipted — detection is statistical (recurring clashes), not self-knowledge.",
+      "R3d": "CONSPIRACY (The Tunnel, seed L123 \"Neither end knew about the other.\"). Two lanes silently trade their planned claims for one stroke: the claim SET is unchanged. VERDICT PASS iff at the trade stroke, for EVERY sample (both methods, all pairs, both rules): zero clash, zero uninvolved-lane signal (no clash bit, no own-rope anomaly), and the rung row is a valid permutation but != the method row; AND rule line: the course heals byte-identically and closes (a one-stroke conspiracy is UNDETECTABLE by any local channel and by the rounds check — only the conductor's global audit or a chain replay sees it); rule method-pos: the pair cannot re-find its place, so post-trade disruption (clash density, closure over a doubled course) is BOOKED AS FINDINGS. Conspirator self-knowledge (own-rope inside the pair) is receipted, never counted as band detection.",
+      "R4": "Mapping receipt: the allegory->module table is booked to the chain and rendered in the README verbatim, each row quoting the seed line it implements.",
+      "R5": "VERDICT PASS iff the full honest-core trace-hash list computed twice is identical (determinism: same seed -> byte-identical trace) and different mulberry32 seeds produce different meta-level order streams (sampling order is the only seed use).",
+      "probe": "Before any sweep: time one blinded Minor course; sweeps sized so the full suite stays < 60s wall. Record the choice."
+    },
+    {
+      "seq": 4,
+      "type": "probe_and_derivation",
+      "probe": {
+        "what": "one blinded Plain Bob Minor course (60 strokes, 6 lanes, method-pos rule) vs global walk",
+        "probeMs": 1.969,
+        "choice": "sweeps = exhaustive enumeration over strokes x bells x kinds on Minor and Doubles under BOTH rules, on DOUBLED courses (recovery room); full suite expected well under 60s at 1.969ms/course. Sealed before the sweeps."
+      },
+      "touch_derivation": "each candidate touch's closure period was computed from the GLOBAL algebra (cyclic walk, cap 5000) BEFORE any blinded touch run; admitted touches and their periods are booked here; the blinded band must close at exactly these periods.",
+      "touches": [
+        {
+          "name": "Plain Bob Minor",
+          "leads": [
+            0
+          ],
+          "tokenLen": 60,
+          "period": 180,
+          "admitted": true
+        },
+        {
+          "name": "Plain Bob Minor",
+          "leads": [
+            0,
+            1
+          ],
+          "tokenLen": 60,
+          "period": 120,
+          "admitted": true
+        },
+        {
+          "name": "Plain Bob Minor",
+          "leads": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "tokenLen": 60,
+          "period": 36,
+          "admitted": true
+        },
+        {
+          "name": "Plain Bob Doubles",
+          "leads": [
+            0
+          ],
+          "tokenLen": 40,
+          "period": 120,
+          "admitted": true
+        }
+      ]
+    }
+  ],
+  "chain": {
+    "verifyInMemory": {
+      "ok": true,
+      "links": 10
+    },
+    "verifyReread": {
+      "ok": true,
+      "links": 10
+    },
+    "stoneCrossCheck": {
+      "ok": false,
+      "firstBadIndex": 0,
+      "at": 1,
+      "why": "missing row_hash",
+      "alg": "fnv1a64-fleet",
+      "genesis": "GENESIS",
+      "links": 10,
+      "tip": null
+    },
+    "tip": "0xf0b5521c5b4ab146",
+    "links": 10
+  }
+}

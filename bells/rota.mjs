@@ -188,6 +188,7 @@ export function runRota({ n, tokens, methodRows, lines = null, rule = 'method-po
       for (const b of d.bells) lanes[b].deviation = { ...d, bell: b };
     } else {
       lanes[d.bell].deviation = { ...d };
+      if (d.kind === 'lost-hunt' && d.dir) lanes[d.bell].dir = d.dir; // initial hunt direction
     }
   }
   const tower = new Tower({ n, methodRows });
